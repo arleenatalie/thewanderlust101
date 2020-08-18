@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Materialized CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/4407d7b225.js" crossorigin="anonymous"></script>
+    <!-- Local JS -->
+    <script src="interactive.js" async></script>
+
+    <title>The Wanderlust 101</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light mycolor">
+        <button class="navbar-toggler toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mycolor" id="navbarSupportedContent" >
+            <ul class="navbar-nav mr-auto navbar-left">
+                <li class="nav-item">
+                    <a class="nav-link center white-text navbutton" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link center white-text navbutton" href="#about">About</a>
+                </li>
+            </ul>
+            <form class="form-inline white-text navbar-right" id="searchbar" style ="background-color: rgb(95, 112, 82)">
+                <input class="form-control white-text" id= "searchbox" type="search" placeholder="Find place...">
+                <input disabled class="form-control total" type="text" value="Total: Rp. 0">
+            </form>
+        </div>
+    </nav>
+
+    <!--Adjustment between Navbar with Slider-->
+    <div class="navbar-fixed"></div>
+
+    <!-- Carousel -->
+    <section class="slider" id="home">    
+        <!-- Title -->
+        <div class="center overlay">
+            <h1 class="text-bold">
+                The Wanderlust 101
+                <i class="fas fa-globe-americas"></i>
+            </h1>
+            <h5 class="mycolor2 text-bold">Your Journey Begins Here.</h5>
+        </div>
+        <ul class="slides">
+            <li>
+                <img src="destinasi/colloseum.jpg" >
+            </li>
+            <li>
+                <img src="destinasi/nusa.jpg" >
+            </li>
+            <li>
+                <img src="destinasi/artic.jpg" >
+            </li>
+            <li>
+                <img src="destinasi/moni.jpg">
+            </li>
+            <li>
+                <img src="destinasi/canyon.jpg" >
+            </li>
+        </ul>
+    </section>
+
+    <!-- Destination -->
+    <section id="destinations">
+        <div class="container">
+            <div class="row">
+                <h5 class="left">All places</h5>
+                <div class="col-sm"></div> 
+                <select name="" id="selectCountry" class="form-control white-text">
+                    <option value="">Select Country</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Italy">Italy</option>
+                    <option value="United States">United States</option>
+                </select>
+            </div>            
+            <div class="row" id="cardrow">
+                <!-- masukin display card disini -->
+                <!-- sintax card baru:
+                <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="destinasi/${items.id}.jpg">
+                                <span class="card-title">${items.name}, ${items.country}</span>
+                            </div>
+                            <div class="card-content">
+                                <p>${items.shortDesc}</p>
+                            </div>
+                            <div class="card-footer center">
+                                <div class="price">${items.price}</div>                            
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#articcircle">See More</button>
+                                <button class="btn-small waves-effect waves-light wishlistbutton"> Add to Wishlist
+                                </button>
+                            </div>
+                        </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Box Destination-->
+    <!-- articcircle -->
+    <div id="modalBox">
+        <!-- modal box baru disini -->
+    </div>
+
+    <!-- About -->
+    <section id="about" class="section section-about scrollspy">
+        <div class="container">
+            <h4 class="center mycolor2 text-bold">ABOUT</h4>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card-panel mycolor white-text center aboutpanel">
+                        <i class="fas fa-globe-americas icon"></i>
+                        <p>
+                        <h5>About Us </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, animi nostrum? Dolor nam dolorum quam?</p>
+                        <hr>
+                        <h4>Find us @</h4>
+                        <p></p>
+                        <p>The Wanderlust 101</p>
+                        <p>Jl. ABCDE no. 123</p>
+                        <p>08112345678</h5>
+                        <p></p>
+                        <p>
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <i class="fab fa-pinterest fa-2x"></i>
+                        </p> 
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card-panel grey lighten-3">
+                        <h5>Leave a message
+                            <i class="material-icons">
+                                email
+                            </i>
+                        </h5>
+                        <div class="input-field">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="input-field">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Phone">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="materialize-textarea" placeholder="Input your message">
+                        </div>
+                        <input type="submit" value="submit" class="btn warna-kode">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="section mycolor white-text center footersection">
+        <p class="flow-text">
+            The Wanderlust 101 &copy; 2020
+        </p>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- materialized css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- bootstrap 4 -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

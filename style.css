@@ -1,0 +1,156 @@
+/* all */
+body {
+    background-color: whitesmoke;
+}
+
+.mycolor {
+    background-color: rgb(95, 112, 82) !important;
+}
+
+.mycolor2{
+    color: salmon;
+}
+
+/* navbar */
+.collapse {
+    height: 65px !important;
+}
+
+.navbar-left li{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+::placeholder{
+    color: rgb(182, 179, 179) !important;
+}
+
+.navbutton:hover {
+    color: salmon !important;
+}
+
+#searchbox {
+    width: 200px !important;
+    border: 1px solid white !important;
+    padding-left: 10px !important;
+    height: 33px !important;
+    margin-top: 7px !important;
+    border-radius: 10px !important;
+}
+
+#searchbox:focus{
+    border: 1px solid salmon !important;
+    box-shadow: 0 1px 0 0 salmon !important;
+}
+
+.total{
+    width: 200px !important;
+    border: 1px solid salmon !important;
+    background-color: white !important;
+    height: 25px !important;
+    padding: 5px 10px !important;
+    margin-top: 8px !important;
+    margin-left: 20px !important;
+    border-radius: 10px !important;
+}
+
+.toggler {
+    border: 1px solid salmon !important;
+    color: white !important;
+}
+
+/* slider */
+.overlay { 
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-indent: 1px;
+    position:absolute;
+    z-index:12;
+    bottom: 20%;
+    width:100%;
+    text-align:center;
+}
+
+.slides{
+    opacity: 0.8;
+}
+
+.form-inline button {
+    float: right;
+    margin-left: 5px;
+}
+
+/* content */
+#selectCountry {
+    background-color: rgb(95, 112, 82) !important;
+    width: 150px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#selectCountry:hover{
+    color:salmon !important;
+}
+
+.card img {
+    height: 250px;
+}
+
+.card .card-content {
+    height: 200px;
+    padding-top: 10px;
+}
+
+.card-footer button {
+    background-color: rgb(95, 112, 82)  !important;
+    margin: 10px !important;
+    border: none !important;
+}
+
+.card-footer button:hover{
+    color: salmon !important;
+}
+
+.price{
+    text-align: center;
+}
+
+/* modal */
+.modalbox{
+    width: 700px !important;
+}
+
+.imgmodal{
+    width: 500px !important;
+    margin: 20px auto !important;
+}   
+
+.modal-footer {
+    height: 50px !important;
+}
+
+/* about */
+.icon {
+    font-size: 30px !important;
+}
+
+hr {
+    color: salmon!important;
+    border: 1px solid salmon;
+}
+
+.aboutpanel p i {
+    margin: 5px !important;
+}
+
+/* footer */
+.footersection{
+    height: 70px !important;
+}
+
+.footersection .flow-text {
+    font-size: 20px !important;
+    margin-top: 10px !important;
+}
